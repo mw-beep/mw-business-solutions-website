@@ -1,0 +1,129 @@
+:root {
+    --navy: #0d1b3d;
+    --black: #111111;
+    --light-blue: #6fa8dc;
+    --white: #ffffff;
+    --off-white: #f7f9fc;
+    --grey: #6b7280;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--white);
+    color: var(--black);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 32px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: var(--navy);
+    text-decoration: none;
+
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.brand-logo {
+    width: 48px;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a {
+    color: var(--navy);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.hero {
+    background: var(--off-white);
+}
+
+.hero-content {
+    max-width: 1200px;
+    min-height: 560px;
+
+    margin: 0 auto;
+    padding: 80px 32px;
+
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-text h1 {
+    margin: 0 0 24px;
+
+    color: var(--navy);
+
+    font-size: 4rem;
+    line-height: 1.05;
+}
+
+.hero-text p {
+    max-width: 560px;
+    margin: 0 0 32px;
+
+    color: var(--grey);
+
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.button {
+    display: inline-block;
+
+    padding: 14px 24px;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.button-primary {
+    background: var(--navy);
+    color: var(--white);
+}
+
+.button-secondary {
+    border: 1px solid var(--navy);
+    color: var(--navy);
+}
+
+.hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-visual img {
+    width: 330px;
+    max-width: 100%;
+}
