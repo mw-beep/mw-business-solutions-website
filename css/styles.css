@@ -239,6 +239,112 @@ a:focus-visible {
     outline-offset: 4px;
 }
 
+/* ---------- SERVICES / WHAT I DO ---------- */
+
+.services-section {
+    background: var(--white);
+    padding: 100px 32px;
+}
+
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-heading {
+    max-width: 700px;
+    margin-bottom: 52px;
+}
+
+.section-label {
+    display: inline-block;
+    margin-bottom: 14px;
+
+    color: var(--light-blue);
+
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.section-heading h2 {
+    margin: 0 0 20px;
+
+    color: var(--navy);
+
+    font-size: 2.5rem;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+}
+
+.section-heading p {
+    margin: 0;
+
+    color: var(--grey);
+
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+
+/* ---------- SERVICE CARDS ---------- */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.service-card {
+    padding: 32px;
+
+    background: var(--off-white);
+
+    border: 1px solid var(--light-border);
+    border-radius: 14px;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+
+    border-color: #d5e3f2;
+
+    box-shadow:
+        0 12px 30px rgba(13, 27, 61, 0.08);
+}
+
+.service-number {
+    display: block;
+    margin-bottom: 28px;
+
+    color: var(--light-blue);
+
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.service-card h3 {
+    margin: 0 0 14px;
+
+    color: var(--navy);
+
+    font-size: 1.35rem;
+}
+
+.service-card p {
+    margin: 0;
+
+    color: var(--grey);
+
+    line-height: 1.7;
+}
+
 
 /* =========================================================
    RESPONSIVE DESIGN
@@ -283,6 +389,13 @@ a:focus-visible {
 
     .hero-visual img {
         width: 220px;
+    }
+        .services-section {
+        padding: 80px 24px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -336,4 +449,16 @@ a:focus-visible {
     .hero-visual img {
         width: 180px;
     }
+    .services-section {
+        padding: 65px 20px;
+    }
+
+    .section-heading h2 {
+        font-size: 2rem;
+    }
+
+    .service-card {
+        padding: 26px;
+    }
+
 }
