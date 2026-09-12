@@ -429,7 +429,7 @@ a:focus-visible {
     transition:
         transform 0.25s ease,
         box-shadow 0.25s ease;
-    
+
 }
 
 .featured-solution-image:hover {
@@ -445,6 +445,296 @@ a:focus-visible {
 }
 
 
+/* ---------- CASE STUDY HERO ---------- */
+
+.case-study-hero {
+    background: var(--off-white);
+    padding: 90px 32px;
+}
+
+
+
+.case-study-hero-grid {
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    align-items: center;
+    gap: 45px;
+}
+
+.case-study-hero h1 {
+    margin: 0 0 24px;
+
+    color: var(--navy);
+
+    font-size: clamp(2.8rem, 4.3vw, 3.7rem);
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+}
+
+.case-study-intro {
+    max-width: 580px;
+    margin: 0 0 32px;
+
+    color: var(--grey);
+
+    font-size: 1.15rem;
+    line-height: 1.7;
+}
+
+.case-study-hero-image {
+    padding: 8px;
+
+    background: var(--white);
+
+    border: 1px solid var(--light-border);
+    border-radius: 14px;
+
+    box-shadow:
+        0 16px 40px rgba(13, 27, 61, 0.08);
+}
+
+.case-study-hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* ---------- RESULTS ---------- */
+
+.results-section {
+    background: var(--white);
+    padding: 100px 32px;
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.result-card {
+    padding: 32px;
+
+    background: var(--off-white);
+
+    border: 1px solid var(--light-border);
+    border-radius: 14px;
+}
+
+.result-value {
+    display: block;
+    margin-bottom: 14px;
+
+    color: var(--light-blue);
+
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.result-card h3 {
+    margin: 0 0 12px;
+
+    color: var(--navy);
+
+    font-size: 1.25rem;
+}
+
+.result-card p {
+    margin: 0;
+
+    color: var(--grey);
+    line-height: 1.6;
+}
+
+
+/* ---------- CASE STUDY: PROBLEM ---------- */
+
+.problem-section {
+    background: var(--off-white);
+    padding: 100px 32px;
+}
+
+.problem-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.problem-section h2 {
+    margin: 0 0 20px;
+
+    color: var(--navy);
+
+    font-size: 2.5rem;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+}
+
+.problem-section p {
+    margin: 0;
+
+    color: var(--grey);
+
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.problem-list {
+    display: grid;
+    gap: 12px;
+}
+
+.problem-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    padding: 18px 22px;
+
+    background: var(--white);
+
+    border: 1px solid var(--light-border);
+    border-radius: 10px;
+}
+
+.problem-item span {
+    color: var(--light-blue);
+
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.problem-item p {
+    color: var(--navy);
+    font-weight: 500;
+}
+
+/* ---------- HOW IT WORKS ---------- */
+
+.workflow-section {
+    background: var(--white);
+    padding: 100px 32px;
+}
+
+.workflow-section .section-container {
+    max-width: 1400px;
+}
+
+/* ---------- WORKFLOW CARDS ---------- */
+
+.workflow-grid {
+    display: grid;
+    gap: 32px;
+}
+
+
+.workflow-card {
+    display: grid;
+    grid-template-columns: 1.9fr 0.6fr;
+
+    align-items: center;
+    gap: 30px;
+
+    padding: 28px;
+
+    background: var(--off-white);
+
+    border: 1px solid var(--light-border);
+    border-radius: 14px;
+}
+
+.workflow-card-reverse {
+    grid-template-columns: 0.6fr 1.9fr;
+}
+
+.workflow-card-reverse .workflow-image {
+    order: 2;
+}
+
+.workflow-card-reverse .workflow-copy {
+    order: 1;
+}
+
+.workflow-image img {
+    width: 100%;
+    height: auto;
+
+    background: var(--white);
+
+    border: 1px solid var(--light-border);
+    border-radius: 8px;
+}
+
+.workflow-copy {
+    padding: 10px;
+}
+
+.workflow-step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 42px;
+    height: 42px;
+
+    margin-bottom: 22px;
+
+    background: var(--navy);
+    color: var(--white);
+
+    border-radius: 50%;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.workflow-card h3 {
+    margin: 0 0 14px;
+
+    color: var(--navy);
+
+    font-size: 1.4rem;
+}
+
+.workflow-card p {
+    margin: 0;
+
+    color: var(--grey);
+
+    line-height: 1.7;
+}
+
+.workflow-card-output {
+    grid-template-columns: 1fr;
+}
+
+.workflow-card-output .workflow-image {
+    width: 100%;
+}
+
+.workflow-card-output .workflow-copy {
+    max-width: 700px;
+}
+
+.workflow-card-output .workflow-image {
+    overflow: hidden;
+
+    border: 1px solid var(--light-border);
+    border-radius: 8px;
+
+    background: var(--white);
+}
+
+.workflow-card-output .workflow-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+    border: 0;
+    border-radius: 0;
+}
+
 
 
 /* =========================================================
@@ -455,6 +745,24 @@ a:focus-visible {
 /* ---------- TABLETS / SMALLER SCREENS ---------- */
 
 @media (max-width: 850px) {
+
+
+    .case-study-hero {
+        padding: 75px 24px;
+    }
+
+    .case-study-hero-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .results-section {
+        padding: 80px 24px;
+    }
+
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
 
     .navbar {
         padding: 18px 24px;
@@ -525,6 +833,30 @@ a:focus-visible {
 
     .solution-actions {
         justify-content: center;
+    }
+
+    .problem-section {
+        padding: 80px 24px;
+    }
+
+    .problem-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+
+    .workflow-section {
+        padding: 80px 24px;
+    }
+
+    .workflow-card,
+    .workflow-card-reverse {
+        grid-template-columns: 1fr;
+    }
+
+    .workflow-card-reverse .workflow-image,
+    .workflow-card-reverse .workflow-copy {
+        order: initial;
     }
 }
 
